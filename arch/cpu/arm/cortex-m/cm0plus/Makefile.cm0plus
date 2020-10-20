@@ -1,0 +1,9 @@
+CONTIKI_ARM_DIRS += cortex-m/cm0plus
+
+CFLAGS += -mcpu=cortex-m0plus
+
+LDFLAGS += -mcpu=cortex-m0plus
+
+TARGET_LIBFILES += -lm
+
+include $(CONTIKI)/$(CONTIKI_NG_CORTEX_DIR)/Makefile.cortex-m
