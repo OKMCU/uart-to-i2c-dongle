@@ -28,6 +28,9 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
+#include "stm32l031xx-conf.h"
+#include "stm32l031xx-def.h"
+
 #include "stm32l0xx_ll_crs.h"
 #include "stm32l0xx_ll_rcc.h"
 #include "stm32l0xx_ll_bus.h"
@@ -66,7 +69,7 @@ extern "C" {
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
-
+void mcu_init(void);
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */

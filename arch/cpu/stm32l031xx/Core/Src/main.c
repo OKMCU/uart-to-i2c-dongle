@@ -149,10 +149,10 @@ void SystemClock_Config(void)
   {
   
   }
-  SysTick_Config(32000);
+  //SysTick_Config(32000);
   //LL_Init1msTick(32000000);
   LL_SYSTICK_SetClkSource(LL_SYSTICK_CLKSOURCE_HCLK);
-  LL_SetSystemCoreClock(32000000);
+  //LL_SetSystemCoreClock(32000000);
 }
 
 /* USER CODE BEGIN 4 */
@@ -169,6 +169,14 @@ void Error_Handler(void)
   /* User can add his own implementation to report the HAL error return state */
 
   /* USER CODE END Error_Handler_Debug */
+}
+
+void mcu_init(void)
+{
+    LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
+    LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
+    SystemClock_Config();
+    MX_GPIO_Init();
 }
 
 #ifdef  USE_FULL_ASSERT
