@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/os",
+                "${workspaceFolder}/os/sys",
+                "${workspaceFolder}/arch/cpu/arm",
+                "${workspaceFolder}/arch/cpu/arm/cortex-m",
+                "${workspaceFolder}/arch/cpu/arm/cortex-m/CMSIS",
+                "${workspaceFolder}/arch/cpu/arm/cortex-m/cm0plus",
+                "${workspaceFolder}/arch/cpu/stm32l031xx/Core/Inc",
+                "${workspaceFolder}/arch/cpu/stm32l031xx/Drivers/CMSIS/Include",
+                "${workspaceFolder}/arch/cpu/stm32l031xx/Drivers/CMSIS/Device/ST/STM32L0xx/Include",
+                "${workspaceFolder}/arch/cpu/stm32l031xx/Drivers/STM32L0xx_HAL_Driver/Inc",
+                "${workspaceFolder}/arch/platform/nucleo-l031k6"
+            ],
+            "defines": [
+                "STM32L031xx"
+            ],
+            "compilerPath": "/var/opt/gcc-arm-none-eabi-5_2-2015q4/bin/arm-none-eabi-gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

@@ -151,7 +151,7 @@ void SystemClock_Config(void)
   }
   //SysTick_Config(32000);
   //LL_Init1msTick(32000000);
-  LL_SYSTICK_SetClkSource(LL_SYSTICK_CLKSOURCE_HCLK);
+  //LL_SYSTICK_SetClkSource(LL_SYSTICK_CLKSOURCE_HCLK);
   //LL_SetSystemCoreClock(32000000);
 }
 
